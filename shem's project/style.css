@@ -96,6 +96,8 @@ h6 {
 img {
 	border: none;
 	max-width: 100%;
+	object-fit: cover;
+	object-position: center;
 }
 
 code {
@@ -125,7 +127,7 @@ kbd {
 	background-color: #ddd;
 	padding: 4px 6px;
 	border-radius: 2px;
-	color: ;
+	/* color: ; */
 }
 
 address {
@@ -631,6 +633,10 @@ button:focus {
 	width: 100%;
 }
 
+.mu-service-header p {
+	padding: 0 25px;
+}
+
 .mu-heading-title {
 	color: #1c1b1b;
 	margin-bottom: 15px;
@@ -653,6 +659,12 @@ button:focus {
 	margin-bottom: 15px;
 	padding: 25px 10px;
 	width: 100%;
+	border-radius: 1rem 1.5rem;
+	border-bottom-left-radius: 0.5rem;
+}
+
+.mu-service-content-single:hover {
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .mu-service-icon-box {
@@ -754,6 +766,8 @@ button:focus {
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 	opacity: 0;
+	border-radius: 1rem 1.5rem;
+	border-bottom-left-radius: 0.5rem;
 }
 
 .mu-item-thumbonail {
@@ -761,6 +775,8 @@ button:focus {
 	float: left;
 	overflow: hidden;
 	width: 100%;
+	border-radius: 1rem 1.5rem;
+	border-bottom-left-radius: 0.5rem;
 }
 
 .mu-item-thumbonail img {
@@ -836,7 +852,7 @@ button:focus {
 /*--------------------*/
 
 #mu-testimonials {
-	background-image: url("assets/images/testimonials-bg.jpeg");
+	background-image: url("assets/images/ian-schneider-TamMbr4okv4-unsplash.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -847,7 +863,7 @@ button:focus {
 }
 
 #mu-testimonials::before {
-	background: rgba(0, 0, 0, 0.9);
+	background: rgba(0, 0, 0, 0.7);
 	bottom: 0;
 	content: '';
 	left: 0;
