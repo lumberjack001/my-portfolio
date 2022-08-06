@@ -109,8 +109,9 @@
 						<!-- Start text slide -->
 
 						<div class="mu-featured-content">
-							<p>Hey! I help people take their businesses off the ground to new digital environments(web
-								spaces) with my skillset. what can I do for you?</p>
+							<p>Hey! I help people take their buisnesses of the ground to new digital environments(web
+								spaces), to real people(customers) and with no
+								stress!</p>
 							<a href="#mu-portfolio" class="mu-primary-btn view-my-work-btn">VIEW MY WORK</a>
 						</div>
 
@@ -593,7 +594,7 @@
 									<div class="col-md-12">
 										<div class="mu-contact-bottom">
 											<div id="form-messages"></div>
-											<form id="ajax-contact" method="post" action="mailer.php"
+											<form onsubmit="sendEmail(); reset(); return false;"
 												class="mu-contact-form">
 												<div class="form-group">
 													<input type="text" class="form-control" placeholder="Name" id="name"
@@ -666,7 +667,8 @@
 
 	<!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
-
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="mailer.js"></script>
 
 
 
